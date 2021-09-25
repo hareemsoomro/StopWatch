@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript</title>
+    <style>
+     .stopwatch> h2 {
+        display: inline;
+        color:brown;
+        font-size: 50px;
+        background-color:cornsilk;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-right: 20px;
+      }
+      .stopwatch{
+          width: 50%;
+          margin: auto;
+          text-align: center;
+          background-color: wheat;
+          padding: 20px;
+      }
+      button{
+          padding: 10px;
+          background-color: brown;
+          color: white;
+          margin-top: 20px;
+      }
+      button:disabled{
+          background-color: darkgrey;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="stopwatch">
+      <h1>Stop Watch</h1>
+      <h2 id="min">0</h2>
+      <h2 id="sec" >0</h2>
+      <h2 id="milisec" >0</h2>
+      <div>
+        <button id="start" onclick="start()" >Start</button>
+        <button id="pause" onclick="stop()">Pause</button>
+        <button id="reset" disabled onclick="reset()">Reset</button>
+      </div>
+    </div>
+  </body>
+  <script src="stopwatch.js"></script>
+</html>
